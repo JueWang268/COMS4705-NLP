@@ -29,9 +29,6 @@
 # %% [markdown]
 # # **Imports and Dependencies**
 
-# %%
-# If you are not using Google Colab, ensure you have Python 3.8+
-!pip install pygtrie
 
 # %%
 import pygtrie
