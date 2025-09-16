@@ -29,15 +29,16 @@
 # %% [markdown]
 # # **Imports and Dependencies**
 
-
 # %%
+# I had to remove the pip install to 
+# suppress error messages from the py file
 import pygtrie
 from collections import Counter
 import datasets
 import json
 import itertools
 
-SUBMISSION_READY = False
+SUBMISSION_READY = True
 
 # %% [markdown]
 # # **TokenizerLearner**
@@ -257,4 +258,5 @@ for text in examples:
     decoded = learner.tokenizer.decode(encoded)
     print("Decoded text:", decoded)
     print('Is decoded same as original text?: ', decoded==text)
+
 
